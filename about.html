@@ -23,12 +23,27 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Additional styles for logo responsiveness */
+      .navbar-brand img {
+        transition: all 0.3s ease;
+      }
+      @media (max-width: 767px) {
+        .navbar-brand img {
+          max-height: 50px;
+          width: auto;
+        }
+      }
+    </style>
   </head>
   <body>
 	 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-	    	<img src="images/logo.png" alt="Bounce & Go logo" width="140" height="100">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Bounce & Go logo" class="img-fluid d-none d-lg-block" width="140">
+          <img src="images/logo.png" alt="Bounce & Go logo" class="img-fluid d-lg-none" width="100">
+        </a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -36,9 +51,9 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link pl-0 text-danger">Home</a></li>
-    <li class="nav-item"><a href="images.html" class="nav-link text-danger">images</a></li>
-    <li class="nav-item"><a href="about.html" class="nav-link text-danger">About</a></li>
-    <li class="nav-item"><a href="contact.html" class="nav-link text-danger">Contact</a></li>
+            <li class="nav-item"><a href="images.html" class="nav-link text-danger">images</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-danger">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-danger">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -69,11 +84,10 @@
 						</div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
-    <!-- Replace content with image -->
-    <div class="featured-image">
-        <img src="images/logo.jpg" alt="What We Offer" class="img-fluid rounded">
-    </div>
-</div>
+                        <div class="featured-image">
+                            <img src="images/logo.jpg" alt="What We Offer" class="img-fluid rounded">
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</section>
@@ -99,27 +113,27 @@
 
 		
      <footer class="ftco-footer ftco-bg-dark ftco-section">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-12">
-        <div class="ftco-footer-widget mb-5">
-          <div class="block-23 mb-3">
-            <ul class="d-flex flex-wrap justify-content-center">
-              <li class="mx-4"><span class="icon icon-map-marker"></span><span class="text">16 Silwer-Eike Avenue, Centurion South Africa</span></li>
-              <li class="mx-4"><a href="tel:+27832647796"><span class="icon icon-phone"></span><span class="text">+27 83 264 7796</span></a></li>
-              <li class="mx-4"><a href="mailto:bounceandgokidz@gmail.com"><span class="icon icon-envelope"></span><span class="text">bounceandgokidz@gmail.com</span></a></li>
-            </ul>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="ftco-footer-widget mb-5">
+              <div class="block-23 mb-3">
+                <ul class="d-flex flex-wrap justify-content-center">
+                  <li class="mx-4"><span class="icon icon-map-marker"></span><span class="text">16 Silwer-Eike Avenue, Centurion South Africa</span></li>
+                  <li class="mx-4"><a href="tel:+27832647796"><span class="icon icon-phone"></span><span class="text">+27 83 264 7796</span></a></li>
+                  <li class="mx-4"><a href="mailto:bounceandgokidz@gmail.com"><span class="icon icon-envelope"></span><span class="text">bounceandgokidz@gmail.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | InriTech <a href="https://inritech.co.za" target="_blank">InriTech</a></p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | InriTech <a href="https://inritech.co.za" target="_blank">InriTech</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/27832647796" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
